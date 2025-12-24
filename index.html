@@ -8,7 +8,7 @@
 <body>
     <h1>Welcome to the Mathematics problem solving Agent</h1>
 
-    <form id="uploadForm" action="https://theonlyspark1.app.n8n.cloud/webhook-test/mathaiagent" method="post" enctype="multipart/form-data">
+    <form id="uploadForm" action="https://theonlyspark1.app.n8n.cloud/webhook/mathaiagent" method="post" enctype="multipart/form-data">
     <div id="card">
         <div class="card-content file-input">
             <label for="file">Choose file:</label>
@@ -32,7 +32,7 @@
 </body>
 <script>
     const ans = document.getElementById('ans');
-    const webhook = "https://theonlyspark1.app.n8n.cloud/webhook-test/mathaiagent";
+    const webhook = "https://theonlyspark1.app.n8n.cloud/webhook/mathaiagent";
     const response = await fetch(webhook, {
         method: 'POST',
         body: formData
@@ -42,3 +42,4 @@
 </script>
 
 </html>
+
